@@ -1,0 +1,75 @@
+<!-- 
+- Create a page using flexbox according to the layout shown below.
+
+![Flex Shrink Property](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/flexbox/ex-2.png)
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper. 
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Flexbox | Assignment II</title>
+        <link rel="stylesheet" href="assets/stylesheets/style.css">
+        <script src="https://kit.fontawesome.com/91066ab110.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container flex">
+                <a href="#">
+                    <img src="assets/altcampus-logo.svg" alt="altcampus-logo">
+                </a>
+                <nav>
+                    <a href="#"><img src="assets/icons/bell.svg" alt=""></a>
+                    <a class="user">Sarah Jones</a>
+                    <a href="#"><img src="assets/icons/user.svg" alt=""></a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="article">
+                <div class="container flex">
+                    <div class="col col-1">
+                        <div>
+                            <img src="assets/icons/dashboard.svg" alt="">
+                            <a>dashboard</a>
+                        </div>
+                        <div>
+                            <img src="assets/icons/article.svg" alt="">
+                            <a>Articles</a>
+                        </div>
+                        <div>
+                            <img src="assets/icons/analytics.svg" alt="">
+                            <a>Analytics</a>
+                        </div>
+                        <div>
+                            <img src="assets/icons/inbox.svg" alt="">
+                            <a>Inbox</a>
+                        </div>
+                        <div>
+                            <img src="assets/icons/setting.svg" alt="">
+                            <a>Settings</a>
+                        </div>
+                    </div>
+                    <div class="col col-2">
+                        <img class="banner" src="assets/01.png" alt="random">
+                        <h1 class="heading">Why are we doing Altcampus?</h1>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia fugiat iusto nulla magni vel, fuga repellat minima quo blanditiis eum incidunt, ipsam accusamus voluptatem illum voluptatum quasi laboriosam et.</p>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque inventore sapiente error fuga quibusdam ducimus praesentium, a debitis rerum accusantium, architecto libero tempore aspernatur autem harum distinctio! Vitae, cupiditate?</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container flex">
+                <small>&copy; Altcampus</small>
+            <nav>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+            </nav>
+            </div>
+        </footer>
+    </body>
+</html>
