@@ -89,14 +89,13 @@ table {
     margin-bottom: 40px;
 }
 .col-1-3 {
-    width: 30%;
+    flex: 0 1 30%;
     margin: 10px 0;
 }
 .gallery-img {
     width: 100%;
-    object-fit: cover;
 }
-.gallery .flex {
+.wrap {
     flex-wrap: wrap;
 }
 /* footer */
