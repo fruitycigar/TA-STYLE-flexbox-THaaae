@@ -12,63 +12,74 @@
         <meta charset="UTF-8">
         <title> Flexbox | Assignment II</title>
         <link rel="stylesheet" href="assets/stylesheets/style.css">
+        <!-- Font awesome -->
         <script src="https://kit.fontawesome.com/91066ab110.js" crossorigin="anonymous"></script>
+        <!-- Font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="header">
             <div class="container flex">
-                <a href="#">
+                <a class="brand" href="#">
                     <img src="assets/altcampus-logo.svg" alt="altcampus-logo">
                 </a>
                 <nav>
-                    <a href="#"><img src="assets/icons/bell.svg" alt=""></a>
-                    <a class="user">Sarah Jones</a>
-                    <a href="#"><img src="assets/icons/user.svg" alt=""></a>
+                    <a href="#">
+                        <img src="assets/icons/bell.svg" alt="bell">
+                    </a>
+                    <a href="#">
+                        <span class="username">Sarah John</span>
+                        <img src="assets/icons/user.svg" alt="user">
+                    </a>
                 </nav>
             </div>
         </header>
-        <main>
-            <section class="article">
-                <div class="container flex">
-                    <div class="col col-1">
-                        <div>
-                            <img src="assets/icons/dashboard.svg" alt="">
-                            <a>dashboard</a>
-                        </div>
-                        <div>
-                            <img src="assets/icons/article.svg" alt="">
-                            <a>Articles</a>
-                        </div>
-                        <div>
-                            <img src="assets/icons/analytics.svg" alt="">
-                            <a>Analytics</a>
-                        </div>
-                        <div>
-                            <img src="assets/icons/inbox.svg" alt="">
-                            <a>Inbox</a>
-                        </div>
-                        <div>
-                            <img src="assets/icons/setting.svg" alt="">
-                            <a>Settings</a>
-                        </div>
-                    </div>
-                    <div class="col col-2">
-                        <img class="banner" src="assets/01.png" alt="random">
-                        <h1 class="heading">Why are we doing Altcampus?</h1>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quia fugiat iusto nulla magni vel, fuga repellat minima quo blanditiis eum incidunt, ipsam accusamus voluptatem illum voluptatum quasi laboriosam et.</p>
-                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque inventore sapiente error fuga quibusdam ducimus praesentium, a debitis rerum accusantium, architecto libero tempore aspernatur autem harum distinctio! Vitae, cupiditate?</p>
-                        <button>Read More</button>
-                    </div>
-                </div>
-            </section>
+        <main class="container flex padding">
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <a href="#">
+                        <img src="assets/icons/dashboard.svg" alt="dashboard-icon">
+                        <span>Dashboard</span>
+                    </a>
+                    <a class="active" href="#">
+                        <img src="assets/icons/article.svg" alt="article-icon">
+                        <span>Articles</span>
+                    </a>
+                    <a href="#">
+                        <img src="assets/icons/analytics.svg" alt="Analytics-icon">
+                        <span>Analytics</span>
+                    </a>
+                    <a href="#">
+                        <img src="assets/icons/inbox.svg" alt="inbox-icon">
+                        <span>Inbox</span>
+                    </a>
+                    <a href="#">
+                        <img src="assets/icons/setting.svg" alt="settings-icon">
+                        <span>Settings</span>
+                    </a>
+                </nav>
+                <button class="logout-btn">
+                    <img src="assets/icons/log-out.svg" alt="log-out">
+                    <span>Log-Out</span>
+                </button>
+            </aside>
+            <article class="article">
+                <img src="assets/01.png" alt="01">
+                <h1 class="heading">Why we are doing Altcampus?</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugit quis sit nemo recusandae nam commodi minima hic. Sit autem reprehenderit nulla commodi, accusantium eum animi vel minus quod sed. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae magnam perferendis ducimus atque cumque ipsum aliquid, expedita similique unde, delectus odio nam suscipit optio sequi adipisci sit est autem veniam.</p>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo similique quia ex dolor, saepe non quibusdam doloremque necessitatibus sit et! Quaerat dicta nesciunt, ad assumenda fugiat aliquam? Ut, eveniet vel? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button class="read-more">Read More</button>
+            </article>
         </main>
         <footer class="footer">
             <div class="container flex">
                 <small>&copy; Altcampus</small>
-            <nav>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-            </nav>
+                <nav>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </nav>    
             </div>
         </footer>
     </body>
